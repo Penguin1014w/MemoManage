@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>317</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:transparent</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>350</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QFrame" name="bgframe">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>350</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(236, 236, 236);
+border-radius:30px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="top">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>351</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(182, 182, 182);
+border-bottom-left-radius: 6px;
+border-bottom-right-radius: 6px;
+
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="closebutton">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>8</y>
+         <width>31</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;  /* 默认背景透明 */
+    border: none;                   /* 去除边框 */
+    padding: 8px;                   /* 给按钮一点内边距 */
+}
+
+QPushButton:clicked {
+    background-color: rgb(150, 150, 150);  /* 点击时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}
+
+QPushButton:hover {
+    background-color: rgb(150, 150, 150);  /* 悬停时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icon/close.png</normaloff>icon/close.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="smallbutton">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>8</y>
+         <width>31</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;  /* 默认背景透明 */
+    border: none;                   /* 去除边框 */
+    padding: 8px;                   /* 给按钮一点内边距 */
+}
+
+QPushButton:clicked {
+    background-color: rgb(150, 150, 150);  /* 点击时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}
+
+QPushButton:hover {
+    background-color: rgb(150, 150, 150);  /* 悬停时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icon/small.png</normaloff>icon/small.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="morebutton">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>8</y>
+         <width>31</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;  /* 默认背景透明 */
+    border: none;                   /* 去除边框 */
+    padding: 8px;                   /* 给按钮一点内边距 */
+}
+QPushButton:clicked {
+    background-color: rgb(150, 150, 150);  /* 点击时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}
+QPushButton:checked {
+    background-color: rgb(150, 150, 150);  /* 选中状态时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}
+QPushButton:hover {
+    background-color: rgb(150, 150, 150);  /* 悬停时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icon/more.png</normaloff>icon/more.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="addbutton">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>8</y>
+         <width>31</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;  /* 默认背景透明 */
+    border: none;                   /* 去除边框 */
+    padding: 8px;                   /* 给按钮一点内边距 */
+}
+
+QPushButton:clicked {
+    background-color: rgb(150, 150, 150);  /* 点击时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}
+
+QPushButton:hover {
+    background-color: rgb(150, 150, 150);  /* 悬停时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icon/add.png</normaloff>icon/add.png</iconset>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="bottom">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>260</y>
+        <width>351</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(182, 182, 182);
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="boldbutton">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>0</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;  /* 默认背景透明 */
+    border: none;                   /* 去除边框 */
+    padding: 8px;                   /* 给按钮一点内边距 */
+}
+QPushButton:clicked {
+    background-color: rgb(150, 150, 150);  /* 点击时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}
+QPushButton:checked {
+    background-color: rgb(150, 150, 150);  /* 选中状态时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}
+QPushButton:hover {
+    background-color: rgb(150, 150, 150);  /* 悬停时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icon/bold.png</normaloff>icon/bold.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="dialogsbutton">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>0</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;  /* 默认背景透明 */
+    border: none;                   /* 去除边框 */
+    padding: 8px;                   /* 给按钮一点内边距 */
+}
+
+QPushButton:clicked {
+    background-color: rgb(150, 150, 150);  /* 点击时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}
+
+QPushButton:hover {
+    background-color: rgb(150, 150, 150);  /* 悬停时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icon/dialogs.png</normaloff>icon/dialogs.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="eyebutton">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>0</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;  /* 默认背景透明 */
+    border: none;                   /* 去除边框 */
+    padding: 8px;                   /* 给按钮一点内边距 */
+}
+
+QPushButton:clicked {
+    background-color: rgb(150, 150, 150);  /* 点击时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}
+
+QPushButton:hover {
+    background-color: rgb(150, 150, 150);  /* 悬停时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icon/visibilityon.png</normaloff>icon/visibilityon.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkbutton">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>0</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;  /* 默认背景透明 */
+    border: none;                   /* 去除边框 */
+    padding: 8px;                   /* 给按钮一点内边距 */
+}
+
+QPushButton:clicked {
+    background-color: rgb(150, 150, 150);  /* 点击时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}
+
+QPushButton:hover {
+    background-color: rgb(150, 150, 150);  /* 悬停时的背景色 */
+    border-radius: 8px;         /* 圆角效果 */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icon/addlink.png</normaloff>icon/addlink.png</iconset>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>351</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#textEdit {
+    background-color: transparent;
+    font: 12pt &quot;Arial&quot;; /* 英文字体 */
+    font: 12pt &quot;Yu Mincho&quot;; /* 日文字体 */
+    font: 12pt &quot;新宋体&quot;; /* 中文字体 */
+    color: rgb(0, 0, 0);
+}
+</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Modern_GUI_PyDracula_PySide6_or_PyQt6-master/Modern_GUI_PyDracula_PySide6_or_PyQt6-master/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

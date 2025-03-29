@@ -1,5 +1,5 @@
 # MemoManage
-MemoManage is a note-taking application demo created using PyQt5.
+a demo created using PyQt5
 ![App Screenshot](screenshot.png)
 
 ## Notify
